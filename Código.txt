@@ -1,12 +1,5 @@
 https://www.programiz.com/online-compiler/4JeT1wwjP79F1
 
-
-
-**+ Caso nn funcione:
-
-
-
-
 using System;
 using System.Linq; 
 /*
