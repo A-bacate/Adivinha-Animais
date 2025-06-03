@@ -16,7 +16,7 @@ class Program
         ListaAnimais listaDeAnimais = new ListaAnimais();
         listaDeAnimais.InicializarAnimais(); 
             //teste
-            Console.WriteLine("Animais disponiveis para adivinhar:");
+       /*     Console.WriteLine("Animais disponiveis para adivinhar:");
             foreach (Animal animal in listaDeAnimais.animais)
             {
                 if (animal != null) 
@@ -25,7 +25,7 @@ class Program
                 }
             }
             Console.WriteLine("----------------------------------");
-            
+          */  
         int indiceSorteado = rnd.Next(0, listaDeAnimais.animais.Length); 
         Animal animalSorteado = listaDeAnimais.animais[indiceSorteado];
 
@@ -129,11 +129,11 @@ class Program
 
     public class ListaAnimais
     {
-        public Animal[] animais = new Animal[21]; 
+        public Animal[] animais = new Animal[42]; 
 
         public void InicializarAnimais()
         {
-            // Animal 1: Leao
+            
             Animal leao = new Animal();
             leao.Nome = "Leao";
             leao.ID = 1;
@@ -145,7 +145,7 @@ class Program
             leao.TamanhoNivel = 3; 
             animais[0] = leao;
 
-            // Animal 2: Golfinho
+            
             Animal golfinho = new Animal();
             golfinho.Nome = "Golfinho";
             golfinho.ID = 2;
@@ -157,7 +157,7 @@ class Program
             golfinho.TamanhoNivel = 2; 
             animais[1] = golfinho;
 
-            // Animal 3: Aguia
+            
             Animal aguia = new Animal();
             aguia.Nome = "Aguia";
             aguia.ID = 3;
@@ -165,11 +165,11 @@ class Program
             aguia.Cores = new string[] { "marrom", "branco" }; 
             aguia.ExpectativaVida = 25;
             aguia.Dieta = new Dieta { Tipo = "Carnivoro" };
-            aguia.Classe = new Classe { Casta = "Ave"}; // Alterei para "Ave" singular
+            aguia.Classe = new Classe { Casta = "Ave"};
             aguia.TamanhoNivel = 2; 
             animais[2] = aguia;
 
-            // Animal 4: Coelho
+            
             Animal coelho = new Animal();
             coelho.Nome = "Coelho";
             coelho.ID = 4;
@@ -181,7 +181,7 @@ class Program
             coelho.TamanhoNivel = 1; 
             animais[3] = coelho;
 
-            // Animal 5: Urso
+            
             Animal urso = new Animal(); // Nome ajustado para "Urso"
             urso.Nome = "Urso";
             urso.ID = 5;
@@ -193,8 +193,7 @@ class Program
             urso.TamanhoNivel = 4; 
             animais[4] = urso;
 
-            // Novos animais (seguindo sua lista e adicionando propriedades)
-            // Animal 6: Gato
+
             Animal gato = new Animal();
             gato.Nome = "Gato";
             gato.ID = 6;
@@ -206,7 +205,7 @@ class Program
             gato.TamanhoNivel = 1;
             animais[5] = gato;
 
-            // Animal 7: Cachorro
+
             Animal cachorro = new Animal();
             cachorro.Nome = "Cachorro";
             cachorro.ID = 7;
@@ -218,7 +217,7 @@ class Program
             cachorro.TamanhoNivel = 2; // Pode variar de pequeno a grande, entao medio eh um bom padrao
             animais[6] = cachorro;
 
-            // Animal 8: Porco
+            
             Animal porco = new Animal();
             porco.Nome = "Porco";
             porco.ID = 8;
@@ -230,7 +229,7 @@ class Program
             porco.TamanhoNivel = 2;
             animais[7] = porco;
 
-            // Animal 9: Galinha
+            
             Animal galinha = new Animal();
             galinha.Nome = "Galinha";
             galinha.ID = 9;
@@ -242,7 +241,7 @@ class Program
             galinha.TamanhoNivel = 1;
             animais[8] = galinha;
 
-            // Animal 10: Baleia
+            
             Animal baleia = new Animal();
             baleia.Nome = "Baleia";
             baleia.ID = 10;
@@ -254,11 +253,11 @@ class Program
             baleia.TamanhoNivel = 4; // Gigante
             animais[9] = baleia;
 
-            // Animal 11: Pinguim
+            
             Animal pinguim = new Animal();
             pinguim.Nome = "Pinguim";
             pinguim.ID = 11;
-            pinguim.Habitat = "Aquatico"; // Passa muito tempo na agua, mas vive em terra tambem
+            pinguim.Habitat = "Aquatico"; 
             pinguim.Cores = new string[] { "preto", "branco" };
             pinguim.ExpectativaVida = 15;
             pinguim.Dieta = new Dieta { Tipo = "Carnivoro" };
@@ -266,7 +265,7 @@ class Program
             pinguim.TamanhoNivel = 1;
             animais[10] = pinguim;
 
-            // Animal 12: Cobra
+            
             Animal cobra = new Animal();
             cobra.Nome = "Cobra";
             cobra.ID = 12;
@@ -278,7 +277,7 @@ class Program
             cobra.TamanhoNivel = 2; // Pode variar
             animais[11] = cobra;
 
-            // Animal 13: Vaca
+            
             Animal vaca = new Animal();
             vaca.Nome = "Vaca";
             vaca.ID = 13;
@@ -290,7 +289,7 @@ class Program
             vaca.TamanhoNivel = 3;
             animais[12] = vaca;
 
-            // Animal 14: Tartaruga
+            
             Animal tartaruga = new Animal();
             tartaruga.Nome = "Tartaruga";
             tartaruga.ID = 14;
@@ -302,7 +301,7 @@ class Program
             tartaruga.TamanhoNivel = 1; // Pode ser 1 ou 2 dependendo da especie
             animais[13] = tartaruga;
 
-            // Animal 15: Ovelha
+            
             Animal ovelha = new Animal();
             ovelha.Nome = "Ovelha";
             ovelha.ID = 15;
@@ -314,7 +313,7 @@ class Program
             ovelha.TamanhoNivel = 2;
             animais[14] = ovelha;
 
-            // Animal 16: Cavalo
+            
             Animal cavalo = new Animal();
             cavalo.Nome = "Cavalo";
             cavalo.ID = 16;
@@ -326,7 +325,7 @@ class Program
             cavalo.TamanhoNivel = 3;
             animais[15] = cavalo;
             
-            // Animal 17: Raposa
+            
             Animal raposa = new Animal();
             raposa.Nome = "Raposa";
             raposa.ID = 17;
@@ -338,7 +337,7 @@ class Program
             raposa.TamanhoNivel = 1;
             animais[16] = raposa;
     
-            // Animal 18: Pombo
+            
             Animal pombo = new Animal();
             pombo.Nome = "Pombo";
             pombo.ID = 18;
@@ -350,7 +349,7 @@ class Program
             pombo.TamanhoNivel = 1;
             animais[17] = pombo;
     
-            // Animal 19: Tubarao
+            
             Animal tubarao = new Animal();
             tubarao.Nome = "Tubarao";
             tubarao.ID = 19;
@@ -362,7 +361,7 @@ class Program
             tubarao.TamanhoNivel = 4;
             animais[18] = tubarao;
     
-            // Animal 20: Morcego
+            
             Animal morcego = new Animal();
             morcego.Nome = "Morcego";
             morcego.ID = 20;
@@ -374,7 +373,7 @@ class Program
             morcego.TamanhoNivel = 1;
             animais[19] = morcego;
     
-            // Animal 21: Rato
+            
             Animal rato = new Animal();
             rato.Nome = "Rato";
             rato.ID = 21;
@@ -385,6 +384,258 @@ class Program
             rato.Classe = new Classe { Casta = "Mamifero" };
             rato.TamanhoNivel = 1;
             animais[20] = rato;
+            
+            
+            Animal borboleta = new Animal();
+            borboleta.Nome = "Borboleta";
+            borboleta.ID = 22;
+            borboleta.Habitat = "Aereo";
+            borboleta.Cores = new string[] { "cores variadas", "preto", "laranja", "amarelo" };
+            borboleta.ExpectativaVida = 0.1; // Meses, convertido para anos
+            borboleta.Dieta = new Dieta { Tipo = "Herbivoro" }; // Nectar
+            borboleta.Classe = new Classe { Casta = "Inseto" };
+            borboleta.TamanhoNivel = 1;
+            animais[21] = borboleta;
+
+            
+            Animal anta = new Animal();
+            anta.Nome = "Anta";
+            anta.ID = 23;
+            anta.Habitat = "Terrestre";
+            anta.Cores = new string[] { "marrom" };
+            anta.ExpectativaVida = 25;
+            anta.Dieta = new Dieta { Tipo = "Herbivoro" };
+            anta.Classe = new Classe { Casta = "Mamifero" };
+            anta.TamanhoNivel = 3;
+            animais[22] = anta;
+
+            
+            Animal sapo = new Animal();
+            sapo.Nome = "Sapo";
+            sapo.ID = 24;
+            sapo.Habitat = "Terrestre"; // E aquatico
+            sapo.Cores = new string[] { "verde", "marrom", "cinza" };
+            sapo.ExpectativaVida = 10;
+            sapo.Dieta = new Dieta { Tipo = "Carnivoro" }; // Insetos
+            sapo.Classe = new Classe { Casta = "Anfibio" };
+            sapo.TamanhoNivel = 1;
+            animais[23] = sapo;
+
+            
+            Animal abelha = new Animal();
+            abelha.Nome = "Abelha";
+            abelha.ID = 25;
+            abelha.Habitat = "Aereo";
+            abelha.Cores = new string[] { "amarelo", "preto" };
+            abelha.ExpectativaVida = 0.1; // Meses, convertido para anos
+            abelha.Dieta = new Dieta { Tipo = "Herbivoro" }; // Nectar e polen
+            abelha.Classe = new Classe { Casta = "Inseto" };
+            abelha.TamanhoNivel = 1;
+            animais[24] = abelha;
+
+            
+            Animal macaco = new Animal();
+            macaco.Nome = "Macaco";
+            macaco.ID = 26;
+            macaco.Habitat = "Terrestre"; // E arboreo
+            macaco.Cores = new string[] { "marrom", "preto", "cinza" };
+            macaco.ExpectativaVida = 20;
+            macaco.Dieta = new Dieta { Tipo = "Onivoro" };
+            macaco.Classe = new Classe { Casta = "Mamifero" };
+            macaco.TamanhoNivel = 2;
+            animais[25] = macaco;
+
+            
+            Animal ra = new Animal();
+            ra.Nome = "Ra";
+            ra.ID = 27;
+            ra.Habitat = "Aquatico"; // E terrestre
+            ra.Cores = new string[] { "verde", "marrom" };
+            ra.ExpectativaVida = 10;
+            ra.Dieta = new Dieta { Tipo = "Carnivoro" }; // Insetos
+            ra.Classe = new Classe { Casta = "Anfibio" };
+            ra.TamanhoNivel = 1;
+            animais[26] = ra;
+
+            
+            Animal formiga = new Animal();
+            formiga.Nome = "Formiga";
+            formiga.ID = 28;
+            formiga.Habitat = "Terrestre";
+            formiga.Cores = new string[] { "preto", "marrom", "vermelho" };
+            formiga.ExpectativaVida = 0.5; // Anos para rainhas, meses para operarias
+            formiga.Dieta = new Dieta { Tipo = "Onivoro" };
+            formiga.Classe = new Classe { Casta = "Inseto" };
+            formiga.TamanhoNivel = 1;
+            animais[27] = formiga;
+
+            
+            Animal perereca = new Animal();
+            perereca.Nome = "Perereca";
+            perereca.ID = 29;
+            perereca.Habitat = "Terrestre"; // E arborea
+            perereca.Cores = new string[] { "verde", "marrom", "azul", "vermelho" };
+            perereca.ExpectativaVida = 5;
+            perereca.Dieta = new Dieta { Tipo = "Carnivoro" }; // Insetos
+            perereca.Classe = new Classe { Casta = "Anfibio" };
+            perereca.TamanhoNivel = 1;
+            animais[28] = perereca;
+
+            
+            Animal besouro = new Animal();
+            besouro.Nome = "Besouro";
+            besouro.ID = 30;
+            besouro.Habitat = "Terrestre";
+            besouro.Cores = new string[] { "preto", "marrom", "verde", "metalico" };
+            besouro.ExpectativaVida = 1; // Anos
+            besouro.Dieta = new Dieta { Tipo = "Onivoro" }; // Varia
+            besouro.Classe = new Classe { Casta = "Inseto" };
+            besouro.TamanhoNivel = 1;
+            animais[29] = besouro;
+
+            
+            Animal lagarta = new Animal();
+            lagarta.Nome = "Lagarta";
+            lagarta.ID = 31;
+            lagarta.Habitat = "Terrestre";
+            lagarta.Cores = new string[] { "verde", "marrom", "listrado", "pontilhado" };
+            lagarta.ExpectativaVida = 0.05; 
+            lagarta.Dieta = new Dieta { Tipo = "Herbivoro" };
+            lagarta.Classe = new Classe { Casta = "Inseto" };
+            lagarta.TamanhoNivel = 1;
+            animais[30] = lagarta;
+
+            
+            Animal cabra = new Animal();
+            cabra.Nome = "Cabra";
+            cabra.ID = 32;
+            cabra.Habitat = "Terrestre";
+            cabra.Cores = new string[] { "branco", "preto", "marrom", "cinza" };
+            cabra.ExpectativaVida = 15;
+            cabra.Dieta = new Dieta { Tipo = "Herbivoro" };
+            cabra.Classe = new Classe { Casta = "Mamifero" };
+            cabra.TamanhoNivel = 2;
+            animais[31] = cabra;
+
+            
+            Animal jacare = new Animal();
+            jacare.Nome = "Jacare";
+            jacare.ID = 33;
+            jacare.Habitat = "Aquatico"; // E terrestre
+            jacare.Cores = new string[] { "verde", "marrom", "cinza" };
+            jacare.ExpectativaVida = 50;
+            jacare.Dieta = new Dieta { Tipo = "Carnivoro" };
+            jacare.Classe = new Classe { Casta = "Reptil" };
+            jacare.TamanhoNivel = 4;
+            animais[32] = jacare;
+
+            
+            Animal bichoPau = new Animal();
+            bichoPau.Nome = "Bicho Pau";
+            bichoPau.ID = 34;
+            bichoPau.Habitat = "Terrestre";
+            bichoPau.Cores = new string[] { "marrom", "verde" };
+            bichoPau.ExpectativaVida = 1; // Anos
+            bichoPau.Dieta = new Dieta { Tipo = "Herbivoro" };
+            bichoPau.Classe = new Classe { Casta = "Inseto" };
+            bichoPau.TamanhoNivel = 1;
+            animais[33] = bichoPau;
+
+            
+            Animal camaleao = new Animal();
+            camaleao.Nome = "Camaleao";
+            camaleao.ID = 35;
+            camaleao.Habitat = "Terrestre";
+            camaleao.Cores = new string[] { "verde", "marrom", "amarelo", "azul", "muda de cor" }; 
+            camaleao.ExpectativaVida = 5;
+            camaleao.Dieta = new Dieta { Tipo = "Carnivoro" }; 
+            camaleao.Classe = new Classe { Casta = "Reptil" };
+            camaleao.TamanhoNivel = 1;
+            animais[34] = camaleao;
+
+            
+            Animal louvaDeus = new Animal();
+            louvaDeus.Nome = "Louva Deus";
+            louvaDeus.ID = 36;
+            louvaDeus.Habitat = "Terrestre";
+            louvaDeus.Cores = new string[] { "verde", "marrom" };
+            louvaDeus.ExpectativaVida = 0.5; 
+            louvaDeus.Dieta = new Dieta { Tipo = "Carnivoro" }; 
+            louvaDeus.Classe = new Classe { Casta = "Inseto" };
+            louvaDeus.TamanhoNivel = 1;
+            animais[35] = louvaDeus;
+
+            
+            Animal iguana = new Animal();
+            iguana.Nome = "Iguana";
+            iguana.ID = 37;
+            iguana.Habitat = "Terrestre";
+            iguana.Cores = new string[] { "verde", "marrom", "cinza" };
+            iguana.ExpectativaVida = 15;
+            iguana.Dieta = new Dieta { Tipo = "Herbivoro" };
+            iguana.Classe = new Classe { Casta = "Reptil" };
+            iguana.TamanhoNivel = 2;
+            animais[36] = iguana; 
+
+            
+            Animal centopeia = new Animal();
+            centopeia.Nome = "Centopeia";
+            centopeia.ID = 38;
+            centopeia.Habitat = "Terrestre";
+            centopeia.Cores = new string[] { "marrom", "preto" };
+            centopeia.ExpectativaVida = 5;
+            centopeia.Dieta = new Dieta { Tipo = "Carnivoro" }; 
+            centopeia.Classe = new Classe { Casta = "Miriapode" };
+            centopeia.TamanhoNivel = 1;
+            animais[37] = centopeia;
+
+            
+            Animal lagarto = new Animal();
+            lagarto.Nome = "Lagarto";
+            lagarto.ID = 39;
+            lagarto.Habitat = "Terrestre";
+            lagarto.Cores = new string[] { "verde", "marrom", "cinza", "padrao" };
+            lagarto.ExpectativaVida = 10;
+            lagarto.Dieta = new Dieta { Tipo = "Onivoro" };
+            lagarto.Classe = new Classe { Casta = "Reptil" };
+            lagarto.TamanhoNivel = 2;
+            animais[38] = lagarto;
+
+            
+            Animal dragaoDeComodo = new Animal();
+            dragaoDeComodo.Nome = "Dragao de Comodo";
+            dragaoDeComodo.ID = 40;
+            dragaoDeComodo.Habitat = "Terrestre";
+            dragaoDeComodo.Cores = new string[] { "marrom", "cinza" };
+            dragaoDeComodo.ExpectativaVida = 30;
+            dragaoDeComodo.Dieta = new Dieta { Tipo = "Carnivoro" };
+            dragaoDeComodo.Classe = new Classe { Casta = "Reptil" };
+            dragaoDeComodo.TamanhoNivel = 4;
+            animais[39] = dragaoDeComodo;
+
+            
+            Animal crocodilo = new Animal();
+            crocodilo.Nome = "Crocodilo";
+            crocodilo.ID = 41;
+            crocodilo.Habitat = "Aquatico"; 
+            crocodilo.Cores = new string[] { "verde", "marrom", "cinza" };
+            crocodilo.ExpectativaVida = 70;
+            crocodilo.Dieta = new Dieta { Tipo = "Carnivoro" };
+            crocodilo.Classe = new Classe { Casta = "Reptil" };
+            crocodilo.TamanhoNivel = 4;
+            animais[40] = crocodilo;
+
+            
+            Animal tatu = new Animal();
+            tatu.Nome = "Tatu";
+            tatu.ID = 42;
+            tatu.Habitat = "Terrestre";
+            tatu.Cores = new string[] { "marrom", "cinza" };
+            tatu.ExpectativaVida = 15;
+            tatu.Dieta = new Dieta { Tipo = "Onivoro" };
+            tatu.Classe = new Classe { Casta = "Mamifero" };
+            tatu.TamanhoNivel = 2;
+            animais[41] = tatu;
         }
     }
 
