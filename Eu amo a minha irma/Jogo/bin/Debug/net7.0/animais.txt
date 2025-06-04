@@ -1,0 +1,42 @@
+Leao,1,Terrestre,amarelo;marrom,15,Carnivoro,Mamifero,3
+Golfinho,2,Aquatico,cinza;branco,30,Carnivoro,Mamifero,2
+Aguia,3,Aereo,marrom;branco,25,Carnivoro,Ave,2
+Coelho,4,Terrestre,marrom;branco;cinza,8,Herbivoro,Mamifero,1
+Urso,5,Terrestre,marrom,20,Onivoro,Mamifero,4
+Gato,6,Terrestre,preto;branco;laranja;cinza;marrom,15,Carnivoro,Mamifero,1
+Cachorro,7,Terrestre,preto;branco;marrom;caramelo;cinza,13,Onivoro,Mamifero,2
+Porco,8,Terrestre,rosa;marrom;preto,10,Onivoro,Mamifero,2
+Galinha,9,Terrestre,branco;marrom;preto;vermelho,5,Onivoro,Ave,1
+Baleia,10,Aquatico,cinza;azul;preto,80,Carnivoro,Mamifero,4
+Pinguim,11,Aquatico,preto;branco,15,Carnivoro,Ave,1
+Cobra,12,Terrestre,verde;marrom;preto;amarelo,10,Carnivoro,Reptil,2
+Vaca,13,Terrestre,branco;preto;marrom,20,Herbivoro,Mamifero,3
+Tartaruga,14,Terrestre,verde;marrom;preto,50,Onivoro,Reptil,1
+Ovelha,15,Terrestre,branco;preto;marrom,12,Herbivoro,Mamifero,2
+Cavalo,16,Terrestre,marrom;preto;branco;ruivo;cinza,30,Herbivoro,Mamifero,3
+Raposa,17,Terrestre,laranja;vermelho;branco;preto,5,Onivoro,Mamifero,1
+Pombo,18,Aereo,cinza;branco;preto,5,Herbivoro,Ave,1
+Tubarão,19,Aquatico,cinza;branco,30,Carnivoro,Peixe,4
+Morcego,20,Aereo,preto;marrom;cinza,20,Onivoro,Mamifero,1
+Rato,21,Terrestre,cinza;marrom;branco;preto,3,Onivoro,Mamifero,1
+Borboleta,22,Aereo,cores variadas;preto;laranja;amarelo,0.1,Herbivoro,Inseto,1
+Anta,23,Terrestre,marrom,25,Herbivoro,Mamifero,3
+Sapo,24,Terrestre,verde;marrom;cinza,10,Carnivoro,Anfibio,1
+Abelha,25,Aereo,amarelo;preto,0.1,Herbivoro,Inseto,1
+Macaco,26,Terrestre,marrom;preto;cinza,20,Onivoro,Mamifero,2
+Ra,27,Aquatico,verde;marrom,10,Carnivoro,Anfibio,1
+Formiga,28,Terrestre,preto;marrom;vermelho,0.5,Onivoro,Inseto,1
+Perereca,29,Terrestre,verde;marrom;azul;vermelho,5,Carnivoro,Anfibio,1
+Besouro,30,Terrestre,preto;marrom;verde;metalico,1,Onivoro,Inseto,1
+Lagarta,31,Terrestre,verde;marrom;listrado;pontilhado,0.05,Herbivoro,Inseto,1
+Cabra,32,Terrestre,branco;preto;marrom;cinza,15,Herbivoro,Mamifero,2
+Jacare,33,Aquatico,verde;marrom;cinza,50,Carnivoro,Reptil,4
+Bicho Pau,34,Terrestre,marrom;verde,1,Herbivoro,Inseto,1
+Camaleao,35,Terrestre,verde;marrom;amarelo;azul;muda de cor,5,Carnivoro,Reptil,1
+Louva Deus,36,Terrestre,verde;marrom,0.5,Carnivoro,Inseto,1
+Iguana,37,Terrestre,verde;marrom;cinza,15,Herbivoro,Reptil,2
+Centopeia,38,Terrestre,marrom;preto,5,Carnivoro,Miriapode,1
+Lagarto,39,Terrestre,verde;marrom;cinza;padrao,10,Onivoro,Reptil,2
+Dragao de Comodo,40,Terrestre,marrom;cinza,30,Carnivoro,Reptil,4
+Crocodilo,41,Aquatico,verde;marrom;cinza,70,Carnivoro,Reptil,4
+Tatu,42,Terrestre,marrom;cinza,15,Onivoro,Mamifero,2
